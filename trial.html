@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="trial.css">
+</head>
+<body>
+    <!-- JQuery Selector -->
+    <!-- Element Selector -->
+    <h1>Hello! World</h1>
+    <p>Hello! World again</p>
+    <p>Hello! Everybody</p>
+    <button>Click me to run</button>
+    <!-- click() Event -->
+    <p class="click">Lorem ipsum dolor sit amet.</p>
+    <p class="click">Lorem ipsum dolor sit amet. </p>
+    <!-- doubleclick event -->
+    <p class="dblclick">Lorem, ipsum dolor.</p>
+    <p class="dblclick">Lorem, ipsum dolor.</p>
+    <!-- mouseenter Event -->
+    <p id="mouseenter">This is god</p>
+    <!-- mouseleave Event -->
+    <p id="mouseleave">Mouseleave Event</p>
+    <!-- mousedown Event -->
+    <p id="mousedown">Mouse down event</p>
+    <!-- focus and blur Event -->
+    Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+<br>
+<br>
+<!-- on Event -->
+<img id="img" src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="" width="300px" height="300px">
+   
+    <script>
+        // element selector
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+// click() Event
+$(".click").click(function(){
+  $(this).hide();
+});
+// dblclick() Event
+$(".dblclick").dblclick(function(){
+    $(this).hide();
+});
+// mouseenter Event
+$("#mouseenter").mouseenter(function(){
+    alert("Welcome to world");
+});
+// mouseleave Event
+$("#mouseleave").mouseleave(function(){
+    alert("Bye! You can leave now.");
+});
+// mousedown Event
+$("#mousedown").mousedown(function(){
+    alert("Mouse down");
+});
+// focus and blur Event
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+});
+// on() Event
+$("#img").on("click", function(){
+    $(this).hide();
+});
+    </script>
+</body>
+</html>
