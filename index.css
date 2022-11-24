@@ -1,0 +1,86 @@
+#hideshow{
+    color: red;
+    
+
+}
+#hide{
+    color: blue;
+    background-color: antiquewhite;
+}
+#show{
+    color: blue;
+    background-color: antiquewhite;
+}
+body{
+    background-color: bisque;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color:greenyellow;
+    border: solid 1px blue;
+  }
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+  
+#slide1{
+    background-color: aquamarine;
+}
+#slide2{
+    background-color:plum;
+}
+#toggle2, #toggle1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  #toggle2 {
+    padding: 50px;
+    display: none;
+  }
+  #stop2, #stop{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+  }
+  #stop2 {
+    padding: 50px;
+    display: none;
+  }
+
+  /* addClass() Method */
+  .important {
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .blue {
+    color: blue;
+  }
+
+  /* removeClass() method */
+  .green {
+    color:green;
+  }
+  /* toggleClass() method */
+  .red {
+    color:red;
+  }
+  /* jquery width() and height() method */
+  #yangdon {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: lightblue;
+  }

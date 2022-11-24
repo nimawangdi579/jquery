@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- JQuery Selector -->
     <!-- Element Selector -->
     <h1>Hello! World</h1>
-    <p>Hello! World again</p>
-    <p>Hello! Everybody</p>
-    <button>Click me to run</button>
+    <p class="element">Hello! World again</p>
+    <p class="element">Hello! Everybody</p>
+    <button id="wow">Click me to run</button>
     <!-- click() Event -->
     <p class="click">Lorem ipsum dolor sit amet.</p>
     <p class="click">Lorem ipsum dolor sit amet. </p>
@@ -34,12 +35,304 @@ Email: <input type="text" name="email">
 <br>
 <!-- on Event -->
 <img id="img" src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="" width="300px" height="300px">
-   
+    <!-- JQuery Effects -->
+    <!-- hide() AND show() Effects -->
+    <p id="hideshow">Please, Hide and Show me!</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <br>
+    <br>
+    <!-- hide() with speed parameter -->
+    <p id="para">Please hide me in 1sec</p>
+    <button id="hideme">Hide</button>
+    <br>
+    <br>
+    <br>
+    <!-- toogle() Effect -->
+    <div>
+    <button id="toggle">Show and hide toggle</button>
+    <p class="effect">Please hide and show me</p>
+    <p class="effect">Please hide and show me</p>
+</div>
+<!-- fadeIn() Effect  -->
+<button id="fadein">Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+<!-- fadeOut() Effect -->
+    <button id="fadeout">Click to fade out boxes</button>
+    <div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+    <div id="div6" style="width:80px;height:80px;background-color:blue;"></div>
+    <br>
+    <!-- fadeToggle() Effect -->
+    <button id="fadetoggle">fadeToggle() In and Out</button>
+    <div id="div7" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="div8" style="width:80px;height:80px;background-color:deepskyblue;"></div><br>
+    <div id="div9" style="width:80px;height:80px;background-color:purple;"></div><br>
+    <br>
+    <!-- fdeTo() Effect-->
+    <button id="fadeto">This is fadeTo()</button>
+    <br>
+    <img id="img1" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="photo" height="300px" width="500px"><br>
+    <img id="img2" src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=480&h=320" alt="" height="300px" width="500px"><br>
+    <img id="img3" src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="" height="300px" width="500px">
+    <br>
+
+
+    <!-- Jquery Slide Effects -->
+    <!-- slideDown() Effect -->
+    <div id="flip">Click Hero to Slide Down</div>
+    <div id="panel">Welcome to the coding world</div>
+    <br>
+
+
+    <!-- slideUp() Effect -->
+   <div id="slide1">CLick Hero to Slide Up</div>
+   <div id="slide2">Welcome to the world</div>
+
+   <br>
+   <!-- slideToggle() Effect-->
+   <div id="toggle1">Click Here to slide up or down</div>
+   <div id="toggle2">Kuzu Zangpo la</div>
+
+   <!-- JQuery Animation Effect -->
+   <!-- animate() Effect -->
+   <button id="animate1">Start the Animation</button>
+   <div id="animate2" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <!-- animate() Multiple Properties -->
+   <button id="clickhere">Click Here for animate multiple properties</button><br>
+   <img id="multiple" src="https://cdn1.vectorstock.com/i/1000x1000/28/60/woman-coding-in-different-programming-languages-vector-41282860.jpg" alt="" style="height:150px;width:150px; position:absolute;">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <!-- animate using Relative value(+=, -+) -->
+   <div>
+   <button id="relative">Click here to increase or decrease the size</button><br>
+   <img id="relative1" src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/c573bf41-6a7c-4927-845c-4ca0260aad6b-1520x800.jpeg" alt="" style="height:150px; width:150px; position: absolute;"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+   <!-- animate() using pre-defined value -->
+   <div>
+   <button id="define">Start Animation</button>
+<div id="define1" style="background:pink;height:400px;width:400px;position:absolute;"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- animate() using queue functonality -->
+<div>
+    <button id="queue">Click Here</button>
+    <div id="queue1" style="width:100px; height:100px;background-color:blue;position:absolute;"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- stop() animation effect-->
+<button id="stop">Stop sliding</button>
+<div id="stop1">Click to slide down panel</div>
+<div id="stop2">Hello world!</div>
+<br>
+<br>
+<br>
+
+<!-- Callback function  -->
+<button id="callback1">Hide</button>
+
+<p id="callback2">Hi. My name is Nima Wangdi.</p>
+<br>
+<br>
+<br>
+<!-- chaining function -->
+<p id="p1">jQuery is fun!!</p>
+
+<button id="chaining">Click me</button><br>
+<!-- get content html() and text() -->
+
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button><br>
+<!-- get content val() -->
+<p id="nima">Name: <input type="val" id="val" value="Mickey Mouse"></p>
+<button id="val1">Show Value</button><br>
+<br>
+<!-- get content attribute attr() -->
+<a href="https://www.w3schools.com" id="w3s">W3Schools.com</a><br>
+<button id="attr">show href value</button><br>
+<br>
+<hr>
+<!-- set content html(), text() and val()-->
+<p id="test1">This is the kingdom.</p>
+<p id="test2">This is kingdom of world.</p>
+
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+<button id="btn5">Set Text</button>
+<button id="btn6">Set HTML</button>
+<button id="btn7">Set Value</button>
+
+<br>
+<!-- Jquery add method append() method -->
+<p class="append">Life is beautiful.</p>
+<p class="append">Life is so beautiful.</p>
+
+<ol>
+  <li>Desuup</li>
+  <li>Desuung</li>
+  <li>Skilling</li>
+</ol>
+
+<button id="btn8">Append text</button>
+<button id="btn9">Append list items</button>
+<br>
+<!-- jquery add method prepend() method  -->
+<p class="prepend">You are so cool.</p>
+<p class="prepend">You are so nice .</p>
+
+<ol class="prepend1">
+  <li>lettuce</li>
+  <li>oninion</li>
+  <li>spanish</li>
+</ol>
+
+<button id="btn10">Prepend text</button>
+<button id="btn11">Prepend list item</button><br>
+<br>
+
+<!-- after() and before() add methods -->
+<img id="pic123" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png" alt="jQuery" width="100" height="140"><br><br>
+
+<button id="btn12">Insert before</button>
+<button id="btn13">Insert after</button><br>
+<br>
+<!-- remove() method  -->
+
+<div id="diver" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+    
+    <p>Web Development is fun.</p>
+    <p>Also, it is challenging too.</p>
+    
+    </div>
+    <br>
+    
+    <button id="remove1">Remove div element</button>
+
+    <!-- empty() method -->
+<div id="div123" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+ 
+    <p>We love Bhutan.</p>
+    <p>Bhutan is happy Country in the world.</p>
+    
+    </div>
+    <br>
+    
+    <button id="empty">Empty the div element</button>
+
+    <!-- jquery css classes -->
+    <!-- addClass() method -->
+    <h1 id="h1">Heading 1</h1>
+<h2 id="h2">Heading 2</h2>
+
+<p class="post">Time and Tide wait for none.</p>
+<p class="post">Everything possible in the world.</p>
+
+<div id="addclass">This is some important text!</div><br>
+
+<button id="addclass1">Add classes to elements</button>
+
+       <!-- removeClass() Method -->
+       <h1 class="green">Heading 1</h1>
+<h2 class="green">Heading 2</h2>
+
+<p class="green">Digital Technology world.</p>
+<p>Digital Tech. ease the living standard of life.</p>
+
+<button id="prem">Remove class from elements</button><br>
+
+<!-- toggleClass() -->
+<h1 class="toggleclass">Heading 1</h1>
+<h2 class="toggleclass">Heading 2</h2>
+
+<p class="toggleclass">Skill Bhutan, Better Future.</p>
+<p class="toggleclass">Be true to yourself.</p>
+
+<button id="toggleclass1">Toggle class</button>
+<!-- set css() property -->
+<p class="css1" style="background-color:#ff0000">This is a paragraph.</p>
+<p class="css1" style="background-color:#00ff00">This is a paragraph.</p>
+<p class="css1" style="background-color:#0000ff">This is a paragraph.</p>
+<button id="css">Set background-color of p</button><br>
+<!-- jQuery width() and height() Methods -->
+<div id="yangdon"></div>
+<br>
+
+<button id="pedon">Display dimensions of div</button>
+
+
+
+
+
+
+
+
     <script>
         // element selector
 $(document).ready(function(){
-  $("button").click(function(){
-    $("p").hide();
+  $("#wow").click(function(){
+    $(".element").hide();
   });
 });
 // click() Event
@@ -75,6 +368,192 @@ $(document).ready(function(){
 $("#img").on("click", function(){
     $(this).hide();
 });
+       // hide() and Show Effects
+    //    $(document).ready(function(){
+  $("#hide").click(function(){
+    $("#hideshow").hide();
+  });
+  $("#show").click(function(){
+    $("#hideshow").show();
+  });
+// });
+// hide() with speed parameter
+$("#hideme").click(function(){
+    $("#para").hide(10000);
+});
+// toggle() Effect
+$("#toggle").click(function(){
+    $(".effect").toggle();
+});
+// fadeIn() Effect
+$("#fadein").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn();
+    $("#div3").fadeIn(10000);
+});
+// fadeOut() Effect
+$("#fadeout").click(function(){
+  $("#div4").fadeOut();
+  $("#div5").fadeOut("slow");
+  $("#div6").fadeOut(3000);
+});
+// fadeToggle() Effect
+$("#fadetoggle").click(function(){
+    $("#div7").fadeToggle();
+    $("#div8").fadeToggle("slow");
+    $("#div9").fadeToggle(3000);
+});
+// fadeTo() Effect
+$("#fadeto").click(function(){
+    $("#img1").fadeTo("slow", 0.15);
+    $("#img2").fadeTo("slow", 0.4);
+    $("#img3").fadeTo("slow", 0.7);
+});
+// slideDown() Effect
+$("#flip").click(function(){
+    $("#panel").slideDown();
+});
+// slideUp() Effect
+$("#slide1").click(function(){
+    $("#slide2").slideUp();
+});
+// slideToggle() Effect
+$("#toggle1").click(function(){
+    $("#toggle2").toggle();
+});
+// Animation Effect
+// animate() Effect
+$("#animate1").click(function(){
+    $("#animate2").animate({left:'250px'});
+});
+// animate() multiple properties
+$("#clickhere").click(function(){
+    $("#multiple").animate({
+        left:'250px', opacity:'0.5', height:'150px', width:'150px'
+    });
+});
+// animate() using relative value
+$("#relative").click(function(){
+    $("#relative1").animate({
+        left:'250px', height: '+=150px', width: '+=150px'
+    });
+});
+// animate() using pre-defined values
+$("#define").click(function(){
+    $("#define1").animate({
+        height:'toggle'
+    });
+});
+// animate() using queue functionality
+$("#queue").click(function(){
+    var div=$("#queue1");
+    div.animate({height:'300px', opacity:'0.4'},"slow");
+    div.animate({width:'300px', opacity:'0.8'},"slow");
+    div.animate({height:'100px', opacity:'0.4'},"slow");
+    div.animate({width:'100px', opacity:'0.8'},"slow");
+});
+// stop() animation 
+$(document).ready(function(){
+$("#stop1").click(function(){
+    $("#stop2").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#stop2").stop();
+  });
+});
+// callback function
+$("#callback1").click(function(){
+  $("#callback2").hide("slow", function(){
+    alert("The paragraph is now hidden");
+  });
+});
+// chaining function
+$("#chaining").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+//   get content html() and text()
+$("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+//   get content val()
+$("#val1").click(function(){
+  alert("Value: " + $("#val").val());
+});
+// get content attr()
+$("#attr").click(function(){
+    alert($("#w3s").attr("href"));
+  });
+// set content html(),val() and text()
+$("#btn5").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#btn6").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+  });
+  $("#btn7").click(function(){
+    $("#test3").val("Dolly Duck");
+  });
+//   Jquery append() method
+$("#btn8").click(function(){
+    $(".append").append(" <b>This is the life</b>.");
+  });
+
+  $("#btn9").click(function(){
+    $("ol").append("<li>water melon</li>");
+  });
+//   prepend() method
+  $("#btn10").click(function(){
+    $(".prepend").prepend("<b>This is the life</b>. ");
+  });
+  $("#btn11").click(function(){
+    $(".prepend1").prepend("<li>Apple</li>");
+  });
+  $("#btn12").click(function(){
+    $("#pic123").before("<b>Before</b>");
+  });
+
+  $("#btn13").click(function(){
+    $("#pic123").after("<i>After</i>");
+  });
+//   remove() method
+$("#remove1").click(function(){
+    $("#diver").remove();
+  });
+//   empty() method
+$("#empty").click(function(){
+    $("#div123").empty();
+  });
+  // addclass() method
+  $("#addclass1").click(function(){
+    $("#h1, #h2, .post").addClass("blue");
+    $("#addclass").addClass("important");
+  });
+  // removeClass() Method
+  $("#prem").click(function(){
+    $(".green").removeClass("green");
+  });
+  // toggleClass() Method
+  $("#toggleclass1").click(function(){
+    $(".toggleclass").toggleClass("red");
+  });
+    // set css() property
+    $("#css").click(function(){
+    $(".css1").css("background-color", "yellow");
+  });
+  // jQuery width() and height() Methods  
+  $("#pedon").click(function(){
+    var txt = "";
+    txt += "Width of div: " + $("#yangdon").width() + "</br>";
+    txt += "Height of div: " + $("#yangdon").height();
+    $("#yangdon").html(txt);
+  });
+
+ 
     </script>
+   
+    
 </body>
 </html>
